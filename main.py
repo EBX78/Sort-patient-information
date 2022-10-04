@@ -20,7 +20,7 @@ print(df)
 print("\n\n#2 SICK AND HEALTHY COUNT:")
 patient = len(list(filter(lambda x: x == 1 ,df.C)))
 healthy = len(df.C) - patient
-print("SICK: %i\nHEALTHY: %i" % (patient, healthy))
+print(f"SICK: {patient}\nHEALTHY: {healthy}")
 
 print("\n\n#3 PERCENTAGE OF SICK'S AMONG MEN / WOMEN:")
 mans_num = len(list(filter(lambda x: x == 1, df.Sex)))
